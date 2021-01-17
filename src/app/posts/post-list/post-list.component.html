@@ -1,0 +1,13 @@
+<!-- if posts -->
+<accordion
+  *ngIf="posts.length > 0"
+  [isAnimated]="true">
+  <accordion-group
+    *ngFor="let post of posts"
+    heading="{{ post.title }}">
+    <p>{{ post.content }}</p>
+  </accordion-group>
+</accordion>
+
+<!-- if !posts -->
+<p class="info-text" *ngIf="posts.length <= 0">No posts to read.</p>
