@@ -6,6 +6,9 @@
     *ngFor="let post of posts"
     heading="{{ post.title }}">
     <p>{{ post.content }}</p>
+    <hr>
+    <button class="btn btn-danger right-button">Delete Post</button>
+    <button class="btn btn-warning right-button">Edit Post</button>
   </accordion-group>
 </accordion>
 

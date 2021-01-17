@@ -6,7 +6,12 @@ import { Post } from './post.model';
 
 @Injectable({providedIn: 'root'})
 export class PostsService {
-  private _posts: Post[] = [];
+  private _posts: Post[] = [
+    {
+      title: 'Dummy Post',
+      content: 'Lorem ipsum, etc.'
+    }
+  ];
   private _postsUpdated = new Subject<Post[]>();
 
   getPosts() {

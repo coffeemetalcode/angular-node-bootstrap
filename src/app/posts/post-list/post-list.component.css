@@ -6,3 +6,9 @@
 .info-text {
   text-align: center;
 }
+
+.right-button {
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
