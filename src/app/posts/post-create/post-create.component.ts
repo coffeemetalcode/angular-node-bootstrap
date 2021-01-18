@@ -16,10 +16,12 @@ export class PostCreateComponent {
     if (form.invalid) {
       return;
     }
+    
+    const id = null;
     const title = form.value.title;
     const content = form.value.content;
 
-    this.postsService.addPost(title, content);
+    this.postsService.addPost(id, title, content);
     form.resetForm();
   }
 }
