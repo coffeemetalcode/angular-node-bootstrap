@@ -3,6 +3,10 @@
   margin-top: 1rem;
 }
 
+accordion-group {
+  margin-bottom: 0.25rem;
+}
+
 .info-text {
   text-align: center;
 }
@@ -13,6 +17,6 @@
   margin-left: 0.5rem;
 }
 
-accordion-group {
-  margin-bottom: 0.5rem;
+a {
+  text-decoration: none;
 }

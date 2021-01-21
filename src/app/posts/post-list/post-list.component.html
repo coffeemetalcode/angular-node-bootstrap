@@ -9,7 +9,11 @@
     <p>{{ post.content }}</p>
     <hr>
     <button class="btn btn-danger btn-right" (click)="onDelete(post.id)">Delete Post</button>
-    <button class="btn btn-warning btn-right">Edit Post</button>
+    <button class="btn btn-warning btn-right">
+      <a [routerLink]="['/edit', post.id]">Edit</a>
+    </button>
+    <!-- The button text is white! -->
+    <!-- <button class="btn btn-warning btn-right">Compare</button> -->
   </accordion-group>
 </accordion>
 

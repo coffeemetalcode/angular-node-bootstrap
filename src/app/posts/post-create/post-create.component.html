@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-body">
     <form
-      (submit)="onAddPost(postForm)"
+      (submit)="onSavePost(postForm)"
       #postForm="ngForm">
       <div class="form-group">
         <label for="title">Post Title</label>
@@ -9,7 +9,7 @@
           class="form-control"
           type="text"
           name="title"
-          ngModel
+          [ngModel]="post?.title"
           required
           #title="ngModel">
       </div>
@@ -19,7 +19,7 @@
           class="form-control"
           rows="6"
           name="content"
-          ngModel
+          [ngModel]="post?.content"
           required
           #content="ngModel">
         </textarea>
