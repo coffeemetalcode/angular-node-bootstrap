@@ -3,6 +3,10 @@
   margin-top: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 accordion-group {
   margin-bottom: 0.25rem;
 }
@@ -17,6 +21,7 @@ accordion-group {
   margin-left: 0.5rem;
 }
 
-a {
-  text-decoration: none;
+.spinner-border {
+  height: 3rem;
+  width: 3rem;
 }

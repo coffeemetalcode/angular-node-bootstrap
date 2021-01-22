@@ -1,3 +1,8 @@
 textarea {
   width: 100%;
 }
+
+.spinner-border {
+  height: 3rem;
+  width: 3rem;
+}
