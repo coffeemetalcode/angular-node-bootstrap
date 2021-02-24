@@ -1,5 +1,23 @@
+input[type='file'] {
+  visibility: hidden;
+}
+
 textarea {
   width: 100%;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+.invalid {
+  font-size: small;
+  color: red;
 }
 
 .spinner-border {

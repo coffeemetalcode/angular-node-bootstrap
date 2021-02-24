@@ -11,7 +11,7 @@
   <accordion-group
     *ngFor="let post of posts"
     heading="{{ post.title }}"
-    id="{{ post. id }}">
+    id="{{ post.id }}">
     <p>{{ post.content }}</p>
     <hr>
     <button class="btn btn-danger btn-right" (click)="onDelete(post.id)">Delete Post</button>
